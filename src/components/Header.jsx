@@ -8,7 +8,7 @@ export default function Header(props) {
   return (
     <Container className='flex a-center j-between' >
       <img src={logo} alt="logo" />
-      <button onClick={() => navigate(props.login?"/login":"signup") } >{props.login ? "Log In" : "Sign In"}</button>
+      <button onClick={() => navigate(props.login?"/login":"/signup") } >{props.login ? "Log In" : "Sign In"}</button>
     </Container>
   )
 }
